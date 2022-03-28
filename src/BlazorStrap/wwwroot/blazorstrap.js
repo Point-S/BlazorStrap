@@ -118,7 +118,7 @@ window.blazorStrap = {
                 }
                 if (ignoreChildren) {
                     let parent = document.querySelector("[data-blazorstrap='" + id + "']");
-
+                    
                     if (parent !== null) {
                         if (parent.contains(event.target)) return;
                     }
