@@ -8,7 +8,7 @@
         internal Func<string, CallerName, EventType, Task>? OnEventForward;
         //private readonly CurrentTheme _currentTheme;
         public Toaster Toaster { get;} = new Toaster();
-        public Theme CurrentTheme { get; internal set; } = Theme.Bootstrap;
+        public Theme CurrentTheme { get; set;} = Theme.Bootstrap;
 
         public BlazorStrapCore(BlazorStrapInterop interop)
         {
